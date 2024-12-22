@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./public/style.css"/>
+  <title> Valyuta </title>
+</head>
+<body class="flex justify-center items-center h-screen bg-[#333]">
+
+  <div class="w-[350px] min-h-[450px] h-max bg-indigo-400 rounded-md shadow-4xl text-center">
+      <h2 class="text-slate-200 text-[17px] mt-[20px] font-bold text-2xl"> Exhange Currency </h2>
+
+      <div class="mt-[25px]" id="form"> 
+        <div class="mt-[10px]">
+            <p class="text-xl text-slate-700 font-medium] ml-[-240px]">Amount</p>
+            <input type="number" value="1" class="pl-[14px] w-[90%] h-[40px] border-2 rounded-md focus:outline-none mt-[5px]"/>
+        </div>
+
+        <div class="flex justify-center items-center mt-[50px] gap-[25px]" id="dropList">
+            <div class="from">
+                <p class="text-white">From </p>
+                <div class="border border-slate-500 w-[120px] h-[40px] bg-white flex justify-between items-center rounded" id="selectBox">
+                    <img src="https://flagcdn.com/48x36/us.png" alt="" class="w-[30px] h-[20px] ml-[5px]"/>
+                    <select id="" name="" class="mr-2 bg-transparent cursor-pointer">
+                         <!--options will be added using JS-->
+                    </select>
+                </div>
+            </div>
+
+            <div id="iconReverse"><i class="fas fa-exchange-alt mt-[25px] text-lg text-emerald-300 cursor-pointer"></i></div>
+
+            <div class="to">
+              <p class="text-white">To </p>
+              <div class="border border-slate-500 w-[120px] h-[40px] bg-white flex justify-between items-center rounded" id="selectBox">
+                  <img src="https://flagcdn.com/48x36/tr.png" alt="" class="w-[30px] h-[20px] ml-[5px]"/>
+                  <select id="" name="" class="mr-2 bg-transparent cursor-pointer">
+                       <!--options will be added using JS-->
+                  </select>
+              </div>
+          </div>
+        </div>
+   
+        <div class="mt-[50px]" id="exchangeRate"> </div>
+        <button id="exchangeButton" class="mt-[25px] rounded border-slate-200 w-[150px] h-[40px] bg-white shadow-md text-[14px] text-emerald-500 font-medium hover:bg-emerald-500 hover:text-white"> Exchange Currency </button>
+      </div>
+  </div> 
+<script src="./dist/countries.js"></script>
+ <script src="./dist/app.js"></script>
+</body>
+</html>
